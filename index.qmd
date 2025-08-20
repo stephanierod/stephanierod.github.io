@@ -1,6 +1,5 @@
 ---
 title: "Stephanie A. Rodríguez"
-about:
   template: trestles
   image: assets/SRodriguez_headshot.jpg
   image-width: 15em
