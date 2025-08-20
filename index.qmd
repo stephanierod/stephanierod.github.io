@@ -1,0 +1,44 @@
+---
+title: "Stephanie A. Rodríguez"
+about:
+  template: trestles
+  image: assets/SRodriguez_headshot.jpg
+  image-width: 15em
+  image-shape: round
+  links:
+    - icon: envelope
+      href: "mailto:stephanie.rodrig@rutgers.edu"
+    - icon: github
+      href: "https://github.com/stephanierod"
+    - icon: linkedin
+      href: "https://linkedin.com/in/your-profile"
+    - icon: mortarboard
+      href: "https://scholar.google.com/citations?user=OWlOVnIAAAAJ&hl=en"
+    - text: "ResearchGate"
+      href: "https://www.researchgate.net/profile/Stephanie-Rodriguez-43"
+---
+
+I am an Assistant Teaching Professor in the Department of Spanish and Portuguese Studies and Director of Lives in Translation (LiT), the Translation and Interpreting program at Rutgers University in Newark. Through LiT, I coordinate community-based initiatives centered on critical civil engagement and teach translation and interpreting students through experiential learning to prepare for nationally recognized certifications.
+
+I am also a Ph.D. student in Bilingualism and Second Language Acquisition in the Department of Spanish and Portuguese at Rutgers University - New Brunswick.
+
+## Research Interests
+
+- Translation Technologies
+- Human-Computer Interaction (HCI)  
+- Morphosyntactic Transfer and Processing
+- Second Language Acquisition
+- Bilingualism
+- Statistics/Data Visualization
+- Language Access Advocacy
+
+## Education
+
+**Ph.D. in Bilingualism and Second Language Acquisition** (Expected 2026)  
+Rutgers University - New Brunswick
+
+**MA in Translation and Interpreting** (2015)  
+Rutgers University
+
+**BA in Spanish and History** (2013)  
+Rutgers University

@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SAR"
+  site-url: "https://stephanierod.github.io/"
+  navbar:
+    background: white
+    left:
+      - text: "Home"
+        href: index.html
+      - text: "Research"  
+        href: research.html
+      - text: "Teaching"
+        href: teaching.html
+      - text: "Community Engagement"
+        href: community.html
+    right:
+      - icon: envelope
+        href: mailto:stephanie.rodrig@rutgers.edu
+      - icon: google-scholar
+        href: https://scholar.google.com/citations?user=OWlOVnIAAAAJ&hl=en
+
+format:
+  html:
+    theme: flatly
+    toc: true
+    css: styles.css
