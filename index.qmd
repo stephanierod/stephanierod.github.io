@@ -11,7 +11,7 @@ about:
     - icon: github
       href: "https://github.com/stephanierod"
     - icon: linkedin
-      href: "https://linkedin.com/in/your-profile"
+      href: "https://www.linkedin.com/in/stephanieantoinetterodriguez/"
     - icon: mortarboard
       href: "https://scholar.google.com/citations?user=OWlOVnIAAAAJ&hl=en"
     - text: "ResearchGate"
