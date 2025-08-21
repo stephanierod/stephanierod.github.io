@@ -23,6 +23,9 @@ website:
       - icon: google-scholar
         href: https://scholar.google.com/citations?user=OWlOVnIAAAAJ&hl=en
 
+page-footer:
+  center: "© 2025 Stephanie A. Rodriguez"
+  
 format:
   html:
     theme: flatly
