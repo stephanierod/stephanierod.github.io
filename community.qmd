@@ -1,5 +1,5 @@
 ---
-title: "Community Engagement"
+title: "Community Impact"
 ---
 
 ## Overview
@@ -19,6 +19,7 @@ University-Newark (110 Warren Street, Newark, NJ).
 
 ::: {layout-ncol=2}
 ![Exhibition Display](assets/exhibition-photo1.png)
+
 ![Interactive Elements](assets/exhibition-photo2.png)
 :::
 
@@ -31,15 +32,6 @@ This project was funded by the CPRA Faculty Research Grant.
 **Project Video: Decolonizing Translation in the U.S./Mexico Diaspora Tejiendo Puentes / Weaving Bridges**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3M9mbtGamEs" title="Decolonizing Translation in the U.S./Mexico Diaspora Tejiendo Puentes / Weaving Bridges" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## Partnerships
-
-The LiT program maintains partnerships with:
-- Local healthcare systems
-- Legal aid organizations  
-- Educational institutions
-- Community-based nonprofits
-- Cultural organizations
 
 ---
 
