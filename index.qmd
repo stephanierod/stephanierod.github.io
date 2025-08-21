@@ -1,5 +1,6 @@
 ---
 title: "Stephanie A. Rodríguez"
+about:
   template: trestles
   image: assets/SRodriguez_headshot.jpg
   image-width: 15em
@@ -28,7 +29,6 @@ I am also a Ph.D. student in Bilingualism and Second Language Acquisition in the
 - Morphosyntactic Transfer and Processing
 - Second Language Acquisition
 - Bilingualism
-- Statistics/Data Visualization
 - Language Access Advocacy
 
 ## Education
