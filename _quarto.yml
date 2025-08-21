@@ -3,19 +3,20 @@ project:
   output-dir: _site
 
 website:
-  title: "SAR"
   site-url: "https://stephanierod.github.io/"
   navbar:
     background: white
     left:
-      - text: "Home"
-        href: index.html
-      - text: "Research"  
-        href: research.html
-      - text: "Teaching"
-        href: teaching.html
-      - text: "Community Engagement"
-        href: community.html
+    - text: "SAR"
+      href: index.html
+    - text: "Research"  
+      href: research.html
+    - text: "Teaching"
+      href: teaching.html
+    - text: "Grants & Awards"
+      href: grants.html
+    - text: "Community Engagement"
+      href: community.html
     right:
       - icon: envelope
         href: mailto:stephanie.rodrig@rutgers.edu
