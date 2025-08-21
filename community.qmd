@@ -17,12 +17,11 @@ The ongoing project aims to inspire students to contribute their unique voices, 
 The exhibition is displayed in the Warren Hall Lobby – Rutgers
 University-Newark (110 Warren Street, Newark, NJ).  
 
-::: {layout-ncol=2}
-![Exhibition view 1](assets/exhibition-photo1.png)
+::: {layout="[50, 50]"}
+![](assets/exhibition-photo1.jpg)
 
-![Exhibition view 2](assets/exhibition-photo2.png)
+![](assets/exhibition-photo2.jpg)
 :::
-
 
 ### Decolonizing Translation in the U.S./Mexico Diaspora
 
@@ -30,7 +29,9 @@ In January 2025, as part of a Lives in Translation and Center for Politics and R
 
 This project was funded by the CPRA Faculty Research Grant.
 
-**Watch the project video**: [Decolonizing Translation in the U.S./Mexico Diaspora Tejiendo Puentes / Weaving Bridges](https://youtu.be/3M9mbtGamEs)
+**Project Video: Decolonizing Translation in the U.S./Mexico Diaspora Tejiendo Puentes / Weaving Bridges**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3M9mbtGamEs" title="Decolonizing Translation in the U.S./Mexico Diaspora Tejiendo Puentes / Weaving Bridges" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Partnerships
 
