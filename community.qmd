@@ -18,8 +18,8 @@ The exhibition is displayed in the Warren Hall Lobby – Rutgers
 University-Newark (110 Warren Street, Newark, NJ).  
 
 ::: {layout-ncol=2}
-![Exhibition Display](assets/exhibition-photo1.jpg)
-![Interactive Elements](assets/exhibition-photo2.jpg)
+![Exhibition Display](assets/exhibition-photo1.png)
+![Interactive Elements](assets/exhibition-photo2.png)
 :::
 
 ### Decolonizing Translation in the U.S./Mexico Diaspora
