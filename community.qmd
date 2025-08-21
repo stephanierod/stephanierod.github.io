@@ -17,10 +17,14 @@ The ongoing project aims to inspire students to contribute their unique voices, 
 The exhibition is displayed in the Warren Hall Lobby – Rutgers
 University-Newark (110 Warren Street, Newark, NJ).  
 
-::: {layout="[50, 50]"}
-![](assets/exhibition-photo1.jpg)
+::: {layout-ncol=2}
+![Esperanza Santos, a graduate student in the American
+Studies PhD program at RU-N, whose audio features a
+multigenerational bilingual conversation discussing
+her role as a language broker.](assets/exhibition-photo1.jpg)
 
-![](assets/exhibition-photo2.jpg)
+![Marylin Rini Gomes, RU-N alumna, and
+her mother discussing the benefits and challenges of bilingualism.](assets/exhibition-photo2.jpg)
 :::
 
 ### Decolonizing Translation in the U.S./Mexico Diaspora
