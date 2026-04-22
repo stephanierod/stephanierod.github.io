@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -131,8 +131,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#awards" id="toc-awards" class="nav-link active" data-scroll-target="#awards">Awards</a></li>
-  <li><a href="#grants-and-fellowships" id="toc-grants-and-fellowships" class="nav-link" data-scroll-target="#grants-and-fellowships">Grants and Fellowships</a></li>
+  <li><a href="#awards-and-fellowships" id="toc-awards-and-fellowships" class="nav-link active" data-scroll-target="#awards-and-fellowships">Awards and Fellowships</a></li>
+  <li><a href="#grants" id="toc-grants" class="nav-link" data-scroll-target="#grants">Grants</a></li>
   </ul>
 </nav>
     </div>
@@ -158,18 +158,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="awards" class="level2">
-<h2 class="anchored" data-anchor-id="awards">Awards</h2>
+<section id="awards-and-fellowships" class="level2">
+<h2 class="anchored" data-anchor-id="awards-and-fellowships">Awards and Fellowships</h2>
+<p><strong>2026-2027</strong> — Cheryl Wall Faculty Fellow,Rutgers University</p>
 <p><strong>2025</strong> — Rutgers University Presidential Award for Excellence in Teaching, Rutgers University, New Brunswick ($1,000)</p>
+<p><strong>2024-2025</strong> — Chancellor’s Scholars-in-Residence Fellowship, Rutgers University, Newark ($15,000)</p>
 </section>
-<section id="grants-and-fellowships" class="level2">
-<h2 class="anchored" data-anchor-id="grants-and-fellowships">Grants and Fellowships</h2>
+<section id="grants" class="level2">
+<h2 class="anchored" data-anchor-id="grants">Grants</h2>
 <p><strong>2025</strong> — Project for Empty Space - Newark Grounds (<em>Lives in Translation with the Design Consortium | Lighting Installation</em>; co-PIs Jennifer Austin and Chantal Fischzang) ($40,000)</p>
 <p><strong>2025</strong> — The Sheila Y. Oliver Center for Politics and Race in America (CPRA) (<em>The politics of multilingualism in New Jersey: Mapping linguistic diversity and identities</em>; co-PI Jennifer Austin) Rutgers University, Newark ($22,280)</p>
 <p><strong>2025</strong> — The Inclusion, Diversity, Equity, and Advocacy (IDEA) Innovation Grant Program (<em>A Feeling Of Itself: A Multilingual, Multimedia Exhibition</em>; co-PIs Jennifer Austin and Chantal Fischzang) Rutgers University, Newark ($5,000)</p>
 <p><strong>2025</strong> — 2025 Dean’s Travel Fund, Rutgers University, Newark ($868)</p>
 <p><strong>2025</strong> — Cultural Programming Grant (<em>Food in Translation</em>; co-PI Taja-Nia Henderson) Rutgers University, Newark ($2,250)</p>
-<p><strong>2024-2025</strong> — Chancellor’s Scholars-in-Residence Fellowship, Rutgers University, Newark ($15,000)</p>
 <p><strong>2024-2025</strong> — Mutual Mentoring Team Grant (<em>If You Build It: Managing Large Scale Events in the Public Humanities Mentoring Network</em>; co-PIs Jennifer Austin, Lacey Hunter, Maria Kennedy, and Stephanie Rodríguez) ($6,000)</p>
 <p><strong>2022-2025</strong> — Humanities Initiatives at Hispanic-Serving Institutions Grant, National Endowment for the Humanities (<em>Lives in Translation: Lead Through Language</em>; co-PIs Jennifer Austin and Jason Cortés) ($150,000)</p>
 <p><strong>2024</strong> — Sheila Y. Oliver Center for Politics and Race in America | Faculty Research (<em>Decolonizing Translation in US/Mexico Diaspora</em>; co-PI Janice Gallagher), Rutgers University, Newark ($25,000)</p>
@@ -218,18 +219,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -261,7 +251,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/stephanierod\.github\.io\/");
@@ -269,7 +281,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

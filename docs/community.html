@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -170,9 +170,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
 <section id="a-feeling-of-itself-exhibition" class="level3">
 <h3 class="anchored" data-anchor-id="a-feeling-of-itself-exhibition">A Feeling Of Itself Exhibition</h3>
-<p>Lives in Translation, in collaboration with the Design Consortium at RU-N, presented <em>A Feeling Of Itself</em>, an exhibition that engages the audience through a set of multimedia audio-visual experiences that express the value of living in translation. The exhibition was based on cultural exchange and the concept of what in Spanish we call “arraigo,” which roughly translates to “a sense of belonging because of one’s roots.” The title, <em>A Feeling Of Itself</em>, is a phrase from one of the recordings — the brother of an LiT student sharing his unique story of life between languages, and the feeling of expressing and communicating in two or more languages at once.</p>
+<p>Lives in Translation, in collaboration with the Design Consortium at RU-N, presents <em>A Feeling Of Itself</em>, an exhibition that engages the audience through a set of multimedia audio-visual experiences that express the value of living in translation. The exhibition was based on cultural exchange and the concept of what in Spanish we call “arraigo,” which roughly translates to “a sense of belonging because of one’s roots.” The title, <em>A Feeling Of Itself</em>, is a phrase from one of the recordings — the brother of an LiT student sharing his unique story of life between languages, and the feeling of expressing and communicating in two or more languages at once.</p>
 <p>The ongoing project aims to inspire students to contribute their unique voices, highlighting translation as a powerful conduit for cultural exchange and effective communication.</p>
-<p>The exhibition is displayed in the Warren Hall Lobby – Rutgers University-Newark (110 Warren Street, Newark, NJ).</p>
+<p>The current phase of <em>A Feeling Of Itself</em> is presented in collaboration with Project for Empty Space at 800 Broad Street, Newark, NJ.</p>
+<p>The three-part program commenced in March 2026, with the A Feeling of Itself Window Installation at 19 Williams Street in Newark, presented in partnership with Teachers Village and RBH Group. The second phase, on view March 24 through June 1, 2026, expands into a full exhibition at Project for Empty Space, 800 Broad Street, Newark, and will open with a reception on April 2 from 6–8 pm. The project will culminate in a site-specific lighting installation across the exterior façade of Edison Place, transforming the building into a beacon that connects language and light.</p>
+<p>Alongside the exhibition, a series of programs exploring language, culture, technology, and community will take place at 800 Broad Street, Newark. These programs include conversations, interactive experiences, and opportunities for participation by all ages.</p>
+<p>Over the next two months, we are excited to welcome Sarita Monjane Henriksen, Fullbright Scholar-in-Residence at Rutgers-Newark, Ross Perlin, Linguist and Co-Director of the Endangered Language Alliance, Tareq Baconi, writer, scholar, and activist, and Para KIDS! as programming partners. Each gathering will feature catering from local cultural food vendors, and the series will culminate in a permanent lighting installation on the side of Project for Empty Space that will continue to engage the community beyond the program’s conclusion.</p>
+<p>To learn more, check out the exhibition webpage: (https://www.projectforemptyspace.org/afeelingofitself)</p>
 <div>
 
 </div>
@@ -247,18 +251,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -290,7 +283,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/stephanierod\.github\.io\/");
@@ -298,7 +313,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
