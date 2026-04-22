@@ -22,7 +22,7 @@ Alongside the exhibition, a series of programs exploring language, culture, tech
 
 Over the next two months, we are excited to welcome Sarita Monjane Henriksen, Fullbright Scholar-in-Residence at Rutgers-Newark, Ross Perlin, Linguist and Co-Director of the Endangered Language Alliance, Tareq Baconi, writer, scholar, and activist, and Para KIDS! as programming partners. Each gathering will feature catering from local cultural food vendors, and the series will culminate in a permanent lighting installation on the side of Project for Empty Space that will continue to engage the community beyond the program’s conclusion.
 
-To learn more, check out the exhibition webpage: (https://www.projectforemptyspace.org/afeelingofitself)
+To learn more, check out the [exhibition webpage](https://www.projectforemptyspace.org/afeelingofitself)
 
 ::: {layout-ncol=2}
 ![Marylin Rini Gomes, RU-N alumna, and her mother discussing the benefits and challenges of bilingualism.](assets/exhibition-photo1.png)
